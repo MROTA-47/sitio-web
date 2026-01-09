@@ -1,36 +1,119 @@
 body{
-    background-color: rgb(204, 211, 114);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #22d3c5; 
 }
 
-#titulo{
-    color: rgb(13, 10, 221);
-    font-family: 'Courier New', Courier, monospace;
-} 
-
-#text{
-    color: rgb(18, 172, 219);
-    font-family: 'Courier New', Courier, monospace;
+#barra{
+    background-color: #22b14c;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 
-#encabezado{
-    background-color: rgb(83, 160, 11);
-    min-height: 200px;
-    height: auto;
-    width: 50%;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 5px 5px 15px rgba(223, 12, 12, 0.5);
+#logo img{
+    height: 60px;
+}
+
+
+#menu{
+    background-color: #555;
+    color: white;
+    width: 1000px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding: 6px 14px;
+    border-radius: 4px;
+    transition: 0.25s;
+}
+
+.menu ul li a:hover{
+    background-color: #fdf92a;
+    color: black;
+}
+
+
+#contenedor-redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#redes{
+    background-color: #fdf92a;
+    width: 250px;
+    height: 20px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+.iconos-redes{
+    margin-top: 6px;
+    display: flex;
+    gap: 10px;
+}
+
+.iconos-redes img{
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.iconos-redes img:hover{
+    transform: scale(1.2);
+}
+
+#contenido{
+    text-align: center;
+    margin-top: 60px;
 }
 
 .encabezado1{
-    color: rgb(14, 201, 92);
+    color: #b22222;
+    font-size: 20px;
 }
 
 .encabezado2{
-    color: rgb(248, 16, 16);
+    color: #003cff;
+    font-size: 18px;
 }
 
 .encabezado3{
-    color: rgb(238, 255, 0);
+    color: #101e9b;
+    font-size: 16px;
+}
+
+.texto{
+    color: #444;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+button{
+    margin-top: 40px;
+    padding: 6px 12px;
+    font-size: 12px;
 }

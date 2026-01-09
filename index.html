@@ -1,27 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenido al sitio</title>
+    <title>Clínica de Fisioterapia</title>
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
 
-    <div id="encabezado">
-        <h1 class="encabezado1">Clinica de Fisioterapia y Rehabilitacion</h1>
-        <h1 class="encabezado2">Servicios Terapeuticos</h1>
-        <h1 class="encabezado3">Rehabilitacion Funcional</h1>
+<header id="barra">
+    <div id="logo">
+        <img src="IMAGES/SegaSonicAni.gif" alt="Logo">
     </div>
 
-    <h1>Ejemplo</h1>
+    <div id="menu">
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Lecciones</a></li>
+                <li><a href="#">Auto cuidado</a></li>
+                <li><a href="#">Deporte</a></li>
+                <li><a href="#">Mujer</a></li>
+                <li><a href="#">Bebé</a></li>
+                <li><a href="#">Clínicas</a></li>
+            </ul>
+        </nav>
+    </div>
 
-    <p>Hola, bienvenido al sitio de fisioterapia de sonic . En esta sección encontrar
-        nuestros servicios, horarios y mucho mas...</p>
+  
+    <div id="contenedor-redes">
+        <div id="redes">Redes</div>
+        <div class="iconos-redes">
+            <img src="IMAGES/instagram.jpg" alt="Instagram">
+            <img src="IMAGES/x.jpg" alt="X">
+            <img src="IMAGES/facebook.jpg" alt="Facebook">
+        </div>
+    </div>
+</header>
 
-    <button onclick="mostrarAlerta()">Alerta</button>
+<main id="contenido">
+    <h1 class="encabezado1">Clínica de Fisioterapia y Rehabilitación</h1>
+    <h2 class="encabezado2">Servicios Terapéuticos</h2>
+    <h3 class="encabezado3">Rehabilitación Funcional</h3>
 
-    <script src="JS/Funciones.js"></script>
+    <p class="texto">
+        Hola, bienvenido al sitio de Fisioterapia de sonic, en esta sección encontrarás
+        información de nuestros servicios, horarios y mucho más.
+    </p>
 
+    <button onclick="mostrarAlerta()">Haz clic aquí para una bienvenida</button>
+</main>
+
+<script src="JS/Funciones.js"></script>
 </body>
 </html>
