@@ -1,7 +1,7 @@
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #22d3c5; 
+    background-color: #22d3c5;
 }
 
 #barra{
@@ -17,22 +17,15 @@ body{
     height: 60px;
 }
 
-
 #menu{
     background-color: #555;
-    color: white;
     width: 1000px;
-    padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
-
 
 .menu ul{
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     gap: 20px;
 }
@@ -40,10 +33,7 @@ body{
 .menu ul li a{
     text-decoration: none;
     color: white;
-    font-size: 14px;
     padding: 6px 14px;
-    border-radius: 4px;
-    transition: 0.25s;
 }
 
 .menu ul li a:hover{
@@ -51,108 +41,142 @@ body{
     color: black;
 }
 
-
 #contenedor-redes{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
 }
-
 
 #redes{
     background-color: #fdf92a;
-    width: 250px;
-    height: 20px;
-    text-align: center;
-    font-size: 13px;
     font-weight: bold;
 }
 
-
 .iconos-redes{
-    margin-top: 6px;
     display: flex;
     gap: 10px;
 }
 
 .iconos-redes img{
     width: 28px;
-    height: 28px;
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
-.iconos-redes img:hover{
-    transform: scale(1.2);
 }
 
 #contenido{
     text-align: center;
-    margin-top: 60px;
-}
-
-.encabezado1{
-    color: #b22222;
-    font-size: 20px;
-}
-
-.encabezado2{
-    color: #003cff;
-    font-size: 18px;
-}
-
-.encabezado3{
-    color: #101e9b;
-    font-size: 16px;
-}
-
-.texto{
-    color: #444;
-    font-size: 13px;
-    margin-top: 20px;
-}
-
-button{
     margin-top: 40px;
-    padding: 6px 12px;
-    font-size: 12px;
 }
-
 
 #grid-principal{
     width: 80%;
-    margin: 60px auto;
+    margin: 40px auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
 }
-
 
 .card{
-    background-color: #ffffff;
-    border-radius: 6px;
+    background: rgb(0, 159, 252);
     padding: 15px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.25);
+    border-radius: 6px;
     text-align: center;
+    box-shadow: 0 0 8px rgba(0,0,0,.3);
 }
-
 
 .card img{
     width: 100%;
     height: 150px;
     object-fit: cover;
-    border-radius: 4px;
 }
 
+#info-fisio{
+    width: 70%;
+    margin: 40px auto;
+    background: rgb(198, 233, 0);
+    padding: 20px;
+    border-radius: 8px;
+}
 
-.card h4{
-    margin-top: 12px;
-    color: #003cff;
+.calculadora input{
+    margin: 5px;
+}
+
+#cuadro-info{
+    width: 420px;
+    height: 220px;
+    background-image: url("../IMAGES/GREENHILL.jpeg");
+    background-size: cover;
+    border-radius: 8px;
+    margin: 40px auto;
+    padding: 20px;
+    color: white;
+}
+#zona-inferior{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+#calculadora-simple{
+    width: 300px;
+    background-color: #b6ab10;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.25);
+    text-align: center;
+}
+
+#calculadora-simple input{
+    width: 90%;
+    margin: 5px 0;
+    padding: 5px;
+}
+#cuadro-info img{
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+#cuadro-info{
+    max-height: 260px;          
+    overflow: hidden;           
+}
+
+#cuadro-info img{
+    max-height: 120px;          
+    object-fit: contain;
+}
+#calculadora-simple{
+    position: relative;
+}
+
+.gif-calculadora{
+    width: 140px;
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#pantalla{
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: right;
+}
+
+.teclado{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+}
+
+.teclado button{
+    padding: 8px;
     font-size: 14px;
+    cursor: pointer;
 }
 
-.card p{
-    font-size: 12px;
-    color: #444;
-    margin-top: 6px;
+.btn-clear{
+    grid-column: span 4;
+    background-color: #ff4d4d;
+    color: white;
 }

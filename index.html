@@ -26,15 +26,12 @@
         </nav>
     </div>
 
-  
     <div id="contenedor-redes">
         <div id="redes">Redes</div>
         <div class="iconos-redes">
-            <img src="IMAGES/instagram.jpg" alt="Instagram">
-            <img src="IMAGES/x.jpg" alt="X">
-            <img src="IMAGES/facebook.jpg" alt="Facebook">
-
-            
+            <img src="IMAGES/instagram.jpg">
+            <img src="IMAGES/x.jpg">
+            <img src="IMAGES/facebook.jpg">
         </div>
     </div>
 </header>
@@ -45,32 +42,103 @@
     <h3 class="encabezado3">Rehabilitación Funcional</h3>
 
     <p class="texto">
-        Hola, bienvenido al sitio de Fisioterapia de sonic, en esta sección encontrarás
-        información de nuestros servicios, horarios y mucho más.
+        Hola, bienvenido al sitio de Fisioterapia de Sonic, aquí encontrarás información
+        de nuestros servicios, horarios y mucho más.
     </p>
 
     <button onclick="mostrarAlerta()">Haz clic aquí para una bienvenida</button>
 </main>
+
+
 <section id="grid-principal">
     <div class="card">
-        <img src="IMAGES/sonico.jpg" alt="Terapia 1">
+        <img src="IMAGES/sonico.jpg">
         <h4>Terapia Física</h4>
         <p>Tratamientos para recuperación muscular y articular.</p>
     </div>
 
     <div class="card">
-        <img src="IMAGES/sonico2.jpg" alt="Terapia 2">
+        <img src="IMAGES/sonico2.jpg">
         <h4>Rehabilitación</h4>
         <p>Rehabilitación funcional para lesiones y cirugías.</p>
     </div>
 
     <div class="card">
-        <img src="IMAGES/sonico3.jpg" alt="Terapia 3">
+        <img src="IMAGES/sonico3.jpg">
         <h4>Masoterapia</h4>
         <p>Masajes terapéuticos para aliviar el dolor.</p>
     </div>
+
+    <div class="card">
+        <img src="IMAGES/lol.jpg">
+        <h4>Electroterapia</h4>
+        <p>Uso de corrientes eléctricas para recuperación muscular.</p>
+    </div>
 </section>
 
+
+<section id="info-fisio">
+    <h2>¿Qué es la fisioterapia?</h2>
+    <p>
+        La fisioterapia es una disciplina de la salud que utiliza ejercicio, terapia manual
+        y agentes físicos para restaurar, mantener y mejorar la movilidad y función del cuerpo.
+    </p>
+
+    <div class="calculadora">
+        <input type="number" id="val1" placeholder="Valor 1">
+        <input type="number" id="val2" placeholder="Valor 2">
+        <button onclick="calcularinput()">Calcular</button>
+    </div>
+</section>
+
+<section id="zona-inferior">
+
+  <section id="cuadro-info">
+    <h3>Atención Personalizada</h3>
+    <p>
+        Tratamientos adaptados a cada paciente para una recuperación segura y efectiva.
+    </p>
+    <img src="IMAGES/SONICS.gif" alt="Atención personalizada">
+</section>
+
+   <section id="calculadora-simple">
+
+    <img src="IMAGES/TAILS.gif" class="gif-calculadora">
+
+    <h3>Calculadora</h3>
+
+   
+    <input type="text" id="pantalla" readonly>
+
+    <div class="teclado">
+        <button onclick="agregar('7')">7</button>
+        <button onclick="agregar('8')">8</button>
+        <button onclick="agregar('9')">9</button>
+        <button onclick="agregar('/')">÷</button>
+
+        <button onclick="agregar('4')">4</button>
+        <button onclick="agregar('5')">5</button>
+        <button onclick="agregar('6')">6</button>
+        <button onclick="agregar('*')">×</button>
+
+        <button onclick="agregar('1')">1</button>
+        <button onclick="agregar('2')">2</button>
+        <button onclick="agregar('3')">3</button>
+        <button onclick="agregar('-')">−</button>
+
+        <button onclick="agregar('0')">0</button>
+        <button onclick="agregar('.')">.</button>
+        <button onclick="calcular()">=</button>
+        <button onclick="agregar('+')">+</button>
+
+        <button class="btn-clear" onclick="limpiar()">C</button>
+    </div>
+
+</section>
 <script src="JS/Funciones.js"></script>
 </body>
-</html>
+<audio id="musica" loop>
+    <source src="MUSICA/Sonic The Hedgehog OST - Green Hill Zone.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="toggleMusic()">🎵 Música</button>
