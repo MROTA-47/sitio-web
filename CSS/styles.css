@@ -1,7 +1,9 @@
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #22d3c5;
+    background-image: url("../IMAGES/GREENHILL.gif");
+    background-size: cover ;
+    background-position: center;
 }
 
 #barra{
@@ -101,7 +103,7 @@ body{
 #cuadro-info{
     width: 420px;
     height: 220px;
-    background-image: url("../IMAGES/GREENHILL.jpeg");
+
     background-size: cover;
     border-radius: 8px;
     margin: 40px auto;
